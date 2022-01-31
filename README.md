@@ -1,35 +1,37 @@
 # primeiro-projeto-
 
-pacote  aulapratica1 ;
+package aulapratica1;
 
- classe  pública Pessoa {
+public class Pessoa {
 
-    código interno privado ;
-    nome da string privada ;
+   private int codigo;
+   private String nome;
 
-    public  Pessoa ( int  codigo , String  nome ){
-       isso . código = código;
-       isso . nome = nome;
+    public Pessoa(int codigo, String nome){
+       this.codigo=codigo;
+       this.nome=nome;
 
     }
 
-      public  String  getNome () {
-        retornar nome;
+      public String getName() {
+        return nome;
 
       }
 
 
-}pacote  aulapratica1 ;
+}
 
-public  class  PessoaApp {
+package aulapratica1;
 
-    public  static  void  main ( String []   args ){
-        Pessoa pessoa1 =  novo  Pessoa ( 1 , " Helder " ) ;
+public class PessoaApp {
 
-        Pessoa pessoa2 =  novo  Pessoa ( 2 , " Ana " );
+    public static void main(String[]  args){
+        Pessoa pessoa1 = new Pessoa(1,"Helder");
 
-        Sistema . fora . println( " o nome do objeto pessoa1 e "  + pessoa1 . getName());
-        Sistema . fora . println( " o nome do objeto pessoa2 e "  + pessoa2 . getName());
+        Pessoa pessoa2 = new Pessoa(2,"Ana");
+
+        System.out.println("o nome do objeto pessoa1 e " +pessoa1.getName());
+        System.out.println("o nome do objeto pessoa2 e " +pessoa2.getName());
 
 
 
